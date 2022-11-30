@@ -16,7 +16,7 @@ def dice_loss(pred, label, eps=1e-3):
     return 1 - d
 
 
-@LOSSES.register_module()
+#@LOSSES.register_module()
 class DiceLoss(nn.Module):
 
     def __init__(self, loss_weight=1.0, reduction='mean'):
