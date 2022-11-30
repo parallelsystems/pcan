@@ -3,7 +3,7 @@ from mmdet.datasets.builder import PIPELINES
 from mmdet.datasets.pipelines import Collect, DefaultFormatBundle, to_tensor
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqImageToTensor(object):
 
     def __init__(self, keys):
@@ -21,7 +21,7 @@ class SeqImageToTensor(object):
     def __repr__(self):
         return self.__class__.__name__ + f'(keys={self.keys})'
     
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqDefaultFormatBundle(DefaultFormatBundle):
 
     def __call__(self, results):
@@ -34,7 +34,7 @@ class SeqDefaultFormatBundle(DefaultFormatBundle):
         return outs
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class VideoCollect(Collect):
     """Collect data from the loader relevant to the specific task.
 

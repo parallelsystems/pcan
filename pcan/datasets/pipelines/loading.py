@@ -2,7 +2,7 @@ from mmdet.datasets.builder import PIPELINES
 from mmdet.datasets.pipelines import LoadAnnotations, LoadImageFromFile
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class LoadMultiImagesFromFile(LoadImageFromFile):
 
     def __init__(self, *args, **kwargs):
@@ -16,7 +16,7 @@ class LoadMultiImagesFromFile(LoadImageFromFile):
         return outs
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqLoadAnnotations(LoadAnnotations):
 
     def __init__(self, with_ins_id=False, *args, **kwargs):

@@ -3,7 +3,7 @@ from mmdet.datasets.builder import PIPELINES
 from mmdet.datasets.pipelines import Normalize, Pad, RandomFlip, Resize
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqResize(Resize):
 
     def __init__(self, *args, **kwargs):
@@ -17,7 +17,7 @@ class SeqResize(Resize):
         return outs
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqNormalize(Normalize):
 
     def __init__(self, *args, **kwargs):
@@ -31,7 +31,7 @@ class SeqNormalize(Normalize):
         return outs
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqRandomFlip(RandomFlip):
 
     def __init__(self, share_params, *args, **kwargs):
@@ -72,7 +72,7 @@ class SeqRandomFlip(RandomFlip):
         return outs
 
 
-@PIPELINES.register_module()
+#@PIPELINES.register_module()
 class SeqPad(Pad):
 
     def __init__(self, *args, **kwargs):
