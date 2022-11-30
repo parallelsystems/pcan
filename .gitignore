@@ -64,3 +64,5 @@ doc/media
 build/
 dist/
 ckpts/
+*.egg-info/
+.eggs/
