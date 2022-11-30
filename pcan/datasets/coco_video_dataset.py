@@ -8,7 +8,7 @@ from pcan.core import eval_mot, eval_mots
 from .parsers import CocoVID
 
 
-@DATASETS.register_module()
+#@DATASETS.register_module()
 class CocoVideoDataset(CocoDataset):
 
     CLASSES = None
