@@ -9,7 +9,7 @@ from mmdet.models.builder import HEADS
 from .fcn_mask_head_plus import FCNMaskHeadPlus
 
 
-@HEADS.register_module()
+#@HEADS.register_module()
 class FeatFCNMaskHeadPlus(FCNMaskHeadPlus):
     """Also return features before the last conv.
     """

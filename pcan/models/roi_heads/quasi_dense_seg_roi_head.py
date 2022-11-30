@@ -8,7 +8,7 @@ from mmdet.models import HEADS
 from .quasi_dense_roi_head import QuasiDenseRoIHead
 
 
-@HEADS.register_module()
+#@HEADS.register_module()
 class QuasiDenseSegRoIHead(QuasiDenseRoIHead):
 
     def __init__(self, *args, **kwargs):

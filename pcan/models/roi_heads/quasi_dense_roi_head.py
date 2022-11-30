@@ -4,7 +4,7 @@ from mmdet.models import HEADS, build_head, build_roi_extractor
 from mmdet.models.roi_heads import StandardRoIHead
 
 
-@HEADS.register_module()
+#@HEADS.register_module()
 class QuasiDenseRoIHead(StandardRoIHead):
 
     def __init__(self,

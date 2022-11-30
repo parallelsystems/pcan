@@ -17,7 +17,7 @@ from .boundary import get_instances_contour_interior
 
 from pytorch_toolbelt import losses as L
 
-@HEADS.register_module()
+#@HEADS.register_module()
 class BoundFCNMaskHeadPlus(FCNMaskHead):
     def __init__(self,
                  num_convs=4,

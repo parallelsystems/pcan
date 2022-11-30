@@ -12,7 +12,7 @@ from mmdet.models.roi_heads.mask_heads.fcn_mask_head import (
 from pcan.core import cal_similarity
 
 
-@HEADS.register_module
+#@HEADS.register_module
 class LocalMatchHeadPlus(nn.Module):
     def __init__(self,
                  window_sizes,

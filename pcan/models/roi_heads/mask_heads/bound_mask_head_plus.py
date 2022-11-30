@@ -18,7 +18,7 @@ from pcan.models.losses import DiceLoss
 
 from pytorch_toolbelt import losses as L
 
-@HEADS.register_module()
+#@HEADS.register_module()
 class BoundFCNMaskHeadPlus(FCNMaskHead):
     def __init__(self,
                  num_convs=4,
