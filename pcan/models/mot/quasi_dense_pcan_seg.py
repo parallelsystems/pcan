@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class QuasiDenseMaskRCNN(EMQuasiDenseFasterRCNN):
 
     def __init__(self, fixed=False, *args, **kwargs):

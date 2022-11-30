@@ -17,7 +17,7 @@ from .quasi_dense import QuasiDenseFasterRCNN
 #from .quasi_dense_pcan_seg import QuasiDenseMaskRCNN
 
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class EMQuasiDenseFasterRCNN(QuasiDenseFasterRCNN):
 
     def __init__(self, channels, proto_num, stage_num, *args, **kwargs):

@@ -17,7 +17,7 @@ def random_color(seed):
     return color
 
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class QuasiDenseFasterRCNN(TwoStageDetector):
 
     def __init__(self, tracker=None, *args, **kwargs):
