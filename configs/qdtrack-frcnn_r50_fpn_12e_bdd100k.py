@@ -148,6 +148,9 @@ model = dict(
                         num_bins=3)))),
         test_cfg = dict(
             rpn=dict(
+                score_thr=0.5,
+                max_per_img=100,
+                nms=dict(type='nms', iou_threshold=0.5),
                 nms_across_levels=False,
                 nms_pre=1000,
                 nms_post=1000,
